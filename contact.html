@@ -25,11 +25,6 @@
             color: white;
             padding-left: 20px;
         }
-        .navbar .nav-links {
-            display: flex;
-            gap: 15px;
-            padding-right: 20px;
-        }
         .navbar .nav-links a {
             color: white;
             text-decoration: none;
@@ -61,6 +56,7 @@
             display: block;
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
+            z-index: -1;
         }
         .image-container:hover img {
             transform: scale(1.05);
@@ -127,16 +123,65 @@
         .error {
             color: red;
         }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                background-color: #d9534f;
+                width: 200px;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .nav-links a:last-child {
+                border-bottom: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">BTECH Restaurant</div>
+        <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="#">Contact Us</a>
         </div>
     </div>
     <div class="container">
@@ -227,6 +272,9 @@
                 document.getElementById("errorMessage").style.display = "block";
             });
         });
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
     </script>
 </body>
 </html>
