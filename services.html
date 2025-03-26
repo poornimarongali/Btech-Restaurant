@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - BTECH Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            background-color: #d9534f;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding-left: 20px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+            padding-right: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            background-color: #c9302c;
+        }
+        .header {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .menu-section {
+            padding: 30px;
+            text-align: center;
+        }
+        .menu-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .menu-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BTECH Restaurant</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    
+    <div class="header">Our Services</div>
+    
+    <div class="menu-section">
+        <div class="menu-title">Experience Exceptional Dining</div>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="dineinexp.webp" alt="Cozy restaurant with a warm ambiance">
+                <p><strong>Dine-In Experience</strong></p>
+                <p>Enjoy a cozy and welcoming ambiance with a carefully curated menu that caters to all tastes.</p>
+            </div>
+            <div class="menu-item">
+                <img src="takeaway.jpg" alt="Food packed for takeaway and delivery">
+                <p><strong>Takeaway & Delivery</strong></p>
+                <p>Order your favorite meals online and enjoy them from the comfort of your home.</p>
+            </div>
+            <div class="menu-item">
+                <img src="catering.jpg" alt="Catering service setup for an event">
+                <p><strong>Catering Services</strong></p>
+                <p>We offer catering services for all types of events, with customizable menus.</p>
+            </div>
+            <div class="menu-item">
+                <img src="privatedine.jpg" alt="Elegant private dining setup">
+                <p><strong>Private Dining & Events</strong></p>
+                <p>Host your private events with an exclusive dining experience.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">&copy; 2025 Delicious Bites. All rights reserved.</div>
+</body>
+</html>

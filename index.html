@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btech restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .navbar {
+            background-color: #d9534f;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding-left: 20px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 15px;
+            padding-right: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            background-color: #c9302c;
+        }
+        .header {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        .menu-section {
+            padding: 30px;
+            text-align: center;
+        }
+        .menu-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 90px;
+            justify-content: center;
+        }
+        .menu-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BTECH Restaurant</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    
+    <div class="header" id="home">BTECH Restaurant</div>
+    
+    <div class="menu-section">
+        <div class="menu-title">Biryani</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="eggbiryani.jpg" alt="Biryani 1"><p>EGG BIRYANI</p></div>
+            <div class="menu-item"><img src="chicken-biryani.jpg" alt="Biryani 2"><p>CHICKEN BIRYANI</p></div>
+            <div class="menu-item"><img src="Mutton-Biryani.jpg" alt="Biryani 3"><p>MUTTON BIRYANI</p></div>
+            <div class="menu-item"><img src="prawn-biryani.jpg" alt="Biryani 4"><p>PRAWN BIRYANI</p></div>
+            <div class="menu-item"><img src="fishbiryani.jpg" alt="Biryani 5"><p>FISH BIRYANI</p></div>
+            <div class="menu-item"><img src="kalmibiryani.jpg" alt="Biryani 6"><p>KALMI BIRYANI</p></div>
+            <div class="menu-item"><img src="tandooribiryani.jpg" alt="Biryani 7"><p>TANDOORI BIRYANI</p></div>
+            <div class="menu-item"><img src="chickentikka.jpg" alt="Biryani 8"><p>CHICKEN TIKKA BIRYANI</p></div>
+        </div>
+    </div>
+    
+    <div class="menu-section">
+        <div class="menu-title">Fried Rice</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="vegfriedrice.jpg" alt="Fried Rice 1"><p>VEG FRIED RICE</p></div>
+            <div class="menu-item"><img src="mushroomfriedrice.jpg" alt="Fried Rice 2"><p>MUSHROOM FRIED RICE</p></div>
+            <div class="menu-item"><img src="paneerfriedrice.jpg" alt="Fried Rice 3"><p>PANEER FRIED RICE</p></div>
+            <div class="menu-item"><img src="chickenfriedrice.jpg" alt="Fried Rice 4"><p>CHICKEN FRIED RICE</p></div>
+        </div>
+    </div>
+    
+    <div class="menu-section">
+        <div class="menu-title">Cool Drinks</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="thumsup.jpg" alt="Cool Drink 1"><p>THUMSUP</p></div>
+            <div class="menu-item"><img src="pepsi.jpg" alt="Cool Drink 2"><p>PEPSI</p></div>
+            <div class="menu-item"><img src="cococola.jpg" alt="Cool Drink 3"><p>COCO COLA</p></div>
+            <div class="menu-item"><img src="sprite.jpg" alt="Cool Drink 4"><p>SPRITE</p></div>
+        </div>
+    </div>
+    
+    <div class="menu-section">
+        <div class="menu-title">Ice Creams</div>
+        <div class="menu-grid">
+            <div class="menu-item"><img src="vanilla.jpg" alt="Ice Cream 1"><p>VANILLA</p></div>
+            <div class="menu-item"><img src="chocoice.jpg" alt="Ice Cream 2"><p>CHOCOLATE</p></div>
+            <div class="menu-item"><img src="butterscotch.jpg" alt="Ice Cream 3"><p>BUTTERSCOTCH</p></div>
+            <div class="menu-item"><img src="blackcurrent.jpg" alt="Ice Cream 4"><p>BLACK CURRENT</p></div>
+        </div>
+    </div>
+    
+    <div class="footer">&copy; 2025 BTECH Restaurant. All rights reserved.</div>
+</body>
+</html>
